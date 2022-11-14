@@ -6,7 +6,7 @@ class KeyPadComponent extends Component {
         return (
             <>
                 <button name="(" onClick={e => this.props.onClick(e.target.name)}>(</button>
-                <button name="CE" onClick={e => this.props.onClick(e.target.name)}>CE</button>
+                <button name="CE"onClick={e => this.props.onClick(e.target.name)}>CE</button>
                 <button name=")" onClick={e => this.props.onClick(e.target.name)}>)</button>
                 <button name="C" onClick={e => this.props.onClick(e.target.name)}>C</button><br/>
                 <button name="1" onClick={e => this.props.onClick(e.target.name)}>1</button>
@@ -29,6 +29,5 @@ class KeyPadComponent extends Component {
         );
     }
 }
-
 
 export default KeyPadComponent;

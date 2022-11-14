@@ -6,7 +6,6 @@ import KeyPadComponent from "./components/KeyPadComponent";
 class App extends Component {
   constructor() {
     super();
-
     this.state = {
       result: "",
     };
@@ -33,10 +32,8 @@ class App extends Component {
     } else {
       checkResult = this.state.result;
     }
-
     try {
       this.setState({
-        // eslint-disable-next-line
         result: (eval(checkResult) || "") + "",
       });
     } catch (e) {
@@ -59,9 +56,7 @@ class App extends Component {
   };
 
   render() {
-    
     document.title = "calculato react";
-
     return (
       <div>
         <div className="calculator-body">
